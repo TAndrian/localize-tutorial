@@ -1,0 +1,13 @@
+{
+    "REGISTRATION":{
+        "TITLE":"Inscription",
+        "NAME":"Saisissez votre nom complet",
+        "EMAIL":"Saisissez votre email",
+        "PASSWORD":"Saisissez votre mot de passe",
+        "CONFIRM_PASSWORD":"Confirmez votre mot de passe",
+        "RGPD":"J'accepte les terms et les conditions d'utilisation",
+        "REGISTER":"S'incrire",
+        "ACCOUNT_EXISTS":"Vous avez déjà un compte ?",
+        "LOGIN":"Se connecter"
+    }
+}

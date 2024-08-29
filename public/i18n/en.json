@@ -1,0 +1,13 @@
+{
+    "REGISTRATION":{
+        "TITLE":"Register",
+        "NAME":"Enter your name",
+        "EMAIL":"Enter your email",
+        "PASSWORD":"Create password",
+        "CONFIRM_PASSWORD":"Confirm password",
+        "RGPD":"I accept all terms & condition",
+        "REGISTER":"Register",
+        "ACCOUNT_EXISTS":"Already have an account ?",
+        "LOGIN":"Login now"
+    }
+}

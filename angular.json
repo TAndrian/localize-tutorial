@@ -5,6 +5,13 @@
   "projects": {
     "localize-tutorial": {
       "projectType": "application",
+      "i18n": {
+        "sourceLocale":"en",
+        "locales": {
+          "fr":"public/i18n/fr.json",
+          "en":"public/i18n/en.json"
+        }
+      },
       "schematics": {},
       "root": "",
       "sourceRoot": "src",
@@ -17,7 +24,8 @@
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
-              "zone.js"
+              "zone.js",
+              "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
@@ -75,7 +83,8 @@
           "options": {
             "polyfills": [
               "zone.js",
-              "zone.js/testing"
+              "zone.js/testing",
+              "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
