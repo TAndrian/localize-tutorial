@@ -6,7 +6,7 @@
     "localize-tutorial": {
       "projectType": "application",
       "i18n": {
-        "sourceLocale":"en",
+        "sourceLocale":"en-US",
         "locales": {
           "fr":"public/i18n/fr.json",
           "en":"public/i18n/en.json"
