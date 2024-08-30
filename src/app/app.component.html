@@ -1,27 +1,58 @@
 <div class="wrapper">
-  <h2>{{'REGISTRATION.TITLE' | translate }}</h2>
+  <div class="languages">
+    <form [formGroup]="langForm">
+      <p-dropdown
+        [options]="languages"
+        formControlName="selectedLanguage"
+        [checkmark]="true"
+        optionLabel="name"
+        optionValue="code"
+        [placeholder]="defaultLanguage"
+      />
+    </form>
+  </div>
+  <h2>{{ "REGISTRATION.TITLE" | translate }}</h2>
   <form action="#">
     <div class="input-box">
-      <input type="text" [placeholder] ="'REGISTRATION.NAME' |translate" required>
+      <input
+        type="text"
+        [placeholder]="'REGISTRATION.NAME' | translate"
+        required
+      />
     </div>
     <div class="input-box">
-      <input type="text" [placeholder] ="'REGISTRATION.EMAIL' |translate" required>
+      <input
+        type="text"
+        [placeholder]="'REGISTRATION.EMAIL' | translate"
+        required
+      />
     </div>
     <div class="input-box">
-      <input type="password" [placeholder] ="'REGISTRATION.PASSWORD' |translate" required>
+      <input
+        type="password"
+        [placeholder]="'REGISTRATION.PASSWORD' | translate"
+        required
+      />
     </div>
     <div class="input-box">
-      <input type="password" [placeholder] ="'REGISTRATION.CONFIRM_PASSWORD' |translate" required>
+      <input
+        type="password"
+        [placeholder]="'REGISTRATION.CONFIRM_PASSWORD' | translate"
+        required
+      />
     </div>
     <div class="policy">
-      <input type="checkbox">
-      <h3>{{'REGISTRATION.RGPD' | translate }}</h3>
+      <input type="checkbox" />
+      <h3>{{ "REGISTRATION.RGPD" | translate }}</h3>
     </div>
     <div class="input-box button">
-      <input type="Submit" [value]="'REGISTRATION.REGISTER' | translate">
+      <input type="Submit" [value]="'REGISTRATION.REGISTER' | translate" />
     </div>
     <div class="text">
-      <h3>{{'REGISTRATION.ACCOUNT_EXISTS' | translate }} <a href="#">{{'REGISTRATION.LOGIN' | translate }}</a></h3>
+      <h3>
+        {{ "REGISTRATION.ACCOUNT_EXISTS" | translate }}
+        <a href="#">{{ "REGISTRATION.LOGIN" | translate }}</a>
+      </h3>
     </div>
   </form>
 </div>

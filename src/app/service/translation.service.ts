@@ -18,4 +18,12 @@ export class TranslationService {
     this.translationService.setDefaultLang(languageCode);
     this.translationService.use(languageCode);
   }
+
+  /**
+   * Change language.
+   * @param languageCode Selected language.
+   */
+  changeLanguage(languageCode: string): void {
+    this.translationService.use(languageCode);
+  }
 }
